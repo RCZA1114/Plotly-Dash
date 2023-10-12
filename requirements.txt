@@ -6,3 +6,4 @@ timedelta
 mysql-connector-python
 plotly
 plotly.express
+gunicorn
