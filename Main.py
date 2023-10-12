@@ -5,8 +5,8 @@ import plotly.express as px
 from datetime import date, timedelta
 from data import get_data #Im getting data from the 24 hour FIle
 import chart_studio
-import chart_studio.plotly as py
-import chart_studio.tools as tls
+#import chart_studio.plotly as py
+#import chart_studio.tools as tls
 
 
 while True:
@@ -59,7 +59,7 @@ while True:
         data = get_data()
         user = 'ramoncarlos1114'
         api = 'Gl8JjwU6YCm3k4vm8Na8'
-        chart_studio.tools.set_credentials_file(username=user, api_key=api)
+        ## chart_studio.tools.set_credentials_file(username=user, api_key=api)
         dayz = pd.to_datetime(dayz)
         data['Date/Time'] = pd.to_datetime(data['Date/Time'])
         start = dayz-timedelta(hours=24)
@@ -69,7 +69,7 @@ while True:
                             color='Tower ID',
                             title=f'Analysis of towers')
         
-        fig = py.plot(line_fig, filename = 'test graph', auto_open=False)
+        ## fig = py.plot(line_fig, filename = 'test graph', auto_open=False)
         #return fig
         return line_fig
 
