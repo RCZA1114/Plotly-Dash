@@ -7,3 +7,6 @@ mysql-connector-python
 plotly
 plotly.express
 gunicorn
+chart_studio
+chart_studio.plotly
+chart_studio.tools
