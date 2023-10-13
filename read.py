@@ -75,6 +75,6 @@ while True:
 
     
     if __name__ == '__main__':
-            app.run(debug=True, host='13.228.225.19')
+            app.run(debug=True, host='0.0.0.0')
 
     
