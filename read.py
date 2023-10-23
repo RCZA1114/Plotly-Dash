@@ -31,7 +31,7 @@ while True:
 
     day = dcc.DatePickerSingle(
             min_date_allowed=date(2023, 1, 10),
-            date=date(2023, 10, 12)
+            date=date(2023, 10, 5)
         )
 
     app.layout = html.Div(children=[
